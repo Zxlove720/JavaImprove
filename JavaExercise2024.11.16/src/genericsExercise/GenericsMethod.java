@@ -1,4 +1,4 @@
-package exercise;
+package genericsExercise;
 
 /**
  * 泛型方法

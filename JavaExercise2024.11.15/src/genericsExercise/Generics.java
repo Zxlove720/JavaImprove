@@ -1,4 +1,4 @@
-package exercise;
+package genericsExercise;
 
 public class Generics {
     // 泛型：泛型是JDK5之后引入的新特性，提供了编译时类型安全检测机制

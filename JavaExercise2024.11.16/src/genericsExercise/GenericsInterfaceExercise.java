@@ -1,4 +1,4 @@
-package exercise;
+package genericsExercise;
 
 import pojo.GenericsInterface;
 
