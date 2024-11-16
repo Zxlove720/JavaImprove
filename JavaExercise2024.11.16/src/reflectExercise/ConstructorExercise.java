@@ -41,11 +41,10 @@ public class ConstructorExercise {
         constructor3.setAccessible(true);
         Person p3 = (Person)constructor3.newInstance("张三");
         System.out.println(p3);
-
-
-
+        // 使用get...s方法获取
+        Constructor[] constructors = clazz.getConstructors();
+        Constructor[] declaredConstructors = clazz.getDeclaredConstructors();
     }
-
 }
 
 class Person{
