@@ -23,10 +23,27 @@ public class Exercise {
 //        }
 //        System.out.println(sum);
 
+//        Scanner sc = new Scanner(System.in);
+//        String expression = sc.nextLine();
+//        int result = getResult(expression);
+//        System.out.println(result);
+
+//        从大于等于N的正整数里找到一个最小的数M，使之满足:M和M的逆序数(如1230的逆序数为321)的和为一个[100000,200000]区间内的值。
+//        输入说明:起始数字N:输出说明:找到的第一个符合条件的数，如果没有符合条件的数，输出F。输入样例:123456输出样例:123460
         Scanner sc = new Scanner(System.in);
-        String expression = sc.nextLine();
-        int result = getResult(expression);
-        System.out.println(result);
+        int number = sc.nextInt();
+        boolean flag = true;
+        for (int i = number; i <= 200000; i++) {
+            int reNumber = getReNumber(i);
+            if (number + reNumber <= 200000 && number + reNumber >= 100000) {
+                System.out.println(i);
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            System.out.println("F");
+        }
 
     }
 
@@ -64,6 +81,20 @@ public class Exercise {
             }
         }
         return result;
+    }
+
+    public static int getReNumber(int i) {
+        String s = "";
+        while (i > 0) {
+            s = s + (i % 10);
+            i /= 10;
+        }
+        int j = 0;
+        while(j < s.length() && s.charAt(j)=='0') {
+            j++;
+        }
+        s = s.substring(j);
+        return Integer.parseInt(s);
     }
 }
 
