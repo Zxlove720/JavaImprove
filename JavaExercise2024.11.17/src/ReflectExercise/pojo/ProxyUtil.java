@@ -47,6 +47,9 @@ public class ProxyUtil {
                         } else if ("dance".equals(method.getName())) {
                             System.out.println("准备场地，收钱");
                         }
+                        if ("clean".equals(method.getName())) {
+                            System.out.println("拦截");
+                        }
                         // 使用被代理对象中的方法
                         return method.invoke(bigStar, args);
                     }
