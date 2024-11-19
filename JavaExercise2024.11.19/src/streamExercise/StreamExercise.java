@@ -1,7 +1,4 @@
-package StreamExercise;
-
-import java.util.*;
-import java.util.stream.Stream;
+package streamExercise;
 
 /**
  * Stream流练习

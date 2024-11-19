@@ -1,7 +1,6 @@
-package StreamExercise;
+package streamExercise;
 
 import java.util.ArrayList;
-import java.util.stream.Stream;
 
 /**
  * Stream流中的中间方法练习
