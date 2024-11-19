@@ -45,7 +45,5 @@ public class StreamMethodExercise {
         // distinct 返回该流的不同元素（是根据Object.equals(Object o)组成的流）
         list.stream().distinct().forEach(s -> System.out.println(s));
         list.stream().filter(s -> s.startsWith("张")).forEach(s -> System.out.println(s));
-
-
     }
 }
