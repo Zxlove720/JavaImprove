@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 /**
  * Stream流中的收集操作
- *
  */
 public class CollectExercise {
     public static void main(String[] args) {
